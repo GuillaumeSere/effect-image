@@ -1,38 +1,405 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./images/bg.png);
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    background: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.header img{
+    height: 100px;
+    border-radius: 50%;
+    padding: .3rem;
+    border: 1px solid white;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: black;
+}
+.link{
+    color: white;
+    font-size: 30px;
+    margin: 1rem;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-name{
+    color: white;
+}
+.horizontal-container{
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    overflow: hidden;
+}
+.horizontal-card{
+    position: absolute;
+    z-index: 1;
+    padding: .3rem;
+    background: white;
+    animation: move-card-1 25s infinite linear;
+}
+.horizontal-card:hover{
+    z-index: 100;
+}
+.horizontal-card-img img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.horizontal-card-img img:hover{
+    transform: scale(1.5);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.8);
+    z-index: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.horizontal-card:nth-child(1) {
+    animation: move-card-1 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(2) {
+    animation: move-card-2 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(3) {
+    animation: move-card-3 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(4) {
+    animation: move-card-4 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(5) {
+    animation: move-card-5 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(6) {
+    animation: move-card-6 25s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(7) {
+    animation: move-card-1 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(8) {
+    animation: move-card-2 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(9) {
+    animation: move-card-3 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(10) {
+    animation: move-card-4 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(11) {
+    animation: move-card-5 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(12) {
+    animation: move-card-6 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.horizontal-card:nth-child(13) {
+    animation: move-card-1 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(14) {
+    animation: move-card-2 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(15) {
+    animation: move-card-3 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(16) {
+    animation: move-card-4 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(17) {
+    animation: move-card-5 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(18) {
+    animation: move-card-6 30s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(19) {
+    animation: move-card-1 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(20) {
+    animation: move-card-2 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(21) {
+    animation: move-card-3 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(22) {
+    animation: move-card-4 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(23) {
+    animation: move-card-5 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(24) {
+    animation: move-card-6 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(25) {
+    animation: move-card-1 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(26) {
+    animation: move-card-2 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(27) {
+    animation: move-card-3 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(28) {
+    animation: move-card-4 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(29) {
+    animation: move-card-5 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(30) {
+    animation: move-card-6 40s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(31) {
+    animation: move-card-1 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(32) {
+    animation: move-card-2 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(33) {
+    animation: move-card-3 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(34) {
+    animation: move-card-4 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(35) {
+    animation: move-card-5 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(36) {
+    animation: move-card-6 45s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(37) {
+    animation: move-card-1 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(38) {
+    animation: move-card-2 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(39) {
+    animation: move-card-3 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(40) {
+    animation: move-card-4 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(41) {
+    animation: move-card-5 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(42) {
+    animation: move-card-6 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-left: 50rem;
+}
+.horizontal-card:nth-child(43) {
+    animation: move-card-1 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(44) {
+    animation: move-card-2 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(45) {
+    animation: move-card-3 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(46) {
+    animation: move-card-4 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(47) {
+    animation: move-card-5 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(48) {
+    animation: move-card-6 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-right: 50rem;
+}
+.horizontal-card:nth-child(49) {
+    animation: move-card-1 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(50) {
+    animation: move-card-2 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(51) {
+    animation: move-card-3 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(52) {
+    animation: move-card-4 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(53) {
+    animation: move-card-5 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(54) {
+    animation: move-card-6 15s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
+}
+.horizontal-card:nth-child(55) {
+    animation: move-card-1 35s infinite linear;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    margin-top: 25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+@keyframes move-card-1 {
+    0% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(-40rem);
+    }
+}
+@keyframes move-card-2 {
+    0% {
+        transform: translateY(-40rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes move-card-3 {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-20rem);
+    }
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes move-card-4 {
+    0% {
+        transform: translateX(-50rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes move-card-5 {
+    0% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(30rem);
+    }
+}
+@keyframes move-card-6 {
+    0% {
+        transform: translateX(50rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
 }
