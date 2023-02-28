@@ -366,12 +366,12 @@ body{
         transform: translateY(0rem);
     }
     100% {
-        transform: translateY(-40rem);
+        transform: translateY(-50rem);
     }
 }
 @keyframes move-card-2 {
     0% {
-        transform: translateY(-40rem);
+        transform: translateY(-50rem);
     }
     100% {
         transform: translateY(0rem);
@@ -399,7 +399,7 @@ body{
         transform: translateY(0rem);
     }
     100% {
-        transform: translateY(30rem);
+        transform: translateY(50rem);
     }
 }
 @keyframes move-card-6 {
