@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
     background: url(./images/bg.png);
+    font-family: 'Shantell Sans', cursive;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -23,6 +26,10 @@ body{
     padding: .5rem 0;
     background: black;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.header h1{
+    color: white;
+    margin: 1rem;
 }
 .header img{
     height: 100px;
@@ -347,7 +354,7 @@ body{
     margin-top: 25rem;
 }
 .horizontal-card:nth-child(55) {
-    animation: move-card-1 35s infinite linear;
+    animation: move-card-1 15s infinite linear;
     box-shadow: 0 10px 10px rgba(0,0,0,0.5);
     margin-top: 25rem;
 }
