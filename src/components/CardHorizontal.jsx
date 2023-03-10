@@ -15,7 +15,7 @@ const CardHorizontal = () => {
                 return (
                     <div className='horizontal-card' key={id}>
                         <div className="horizontal-card-img">
-                            <img src={image} alt="illustartion" onClick={handleShow} openWindow={true} />
+                            <img src={image} alt="illustartion" onClick={handleShow} />
                         </div>
                     </div>
                 )
