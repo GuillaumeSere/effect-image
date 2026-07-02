@@ -3,11 +3,16 @@ import Picasso from '../images/Picasso.gif'
 
 const Header = () => {
     return (
-        <div className='header'>
-            <h1>GALERIE</h1>
-            <img src={Picasso} alt="gif" />
-            <h1>IA</h1>
-        </div>
+        <header className='header'>
+            <div className="header-brand">
+                <img src={Picasso} alt="" />
+                <div>
+                    <p className="header-kicker">Art abstrait</p>
+                    <h1>Galerie IA</h1>
+                </div>
+            </div>
+            <p className="header-count">56 oeuvres</p>
+        </header>
     )
 }
 
